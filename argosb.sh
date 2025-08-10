@@ -292,17 +292,16 @@ fi
 echo "$port_ss" > "$HOME/agsb/port_ss"
 echo "Shadowsocks-2022端口：$port_ss"
 cat >> "$HOME/agsb/xr.json" <<EOF
-        {
-            "tag":"ss-2022",
-            "listen": "::",
-            "port": $port_ss,
-            "protocol": "socks",
-            "settings": {
-            "auth": "noauth", // 认证方式：noauth 或 password
-            "udp": true,      // 是否启用 UDP 代理
-            "ip": "127.0.0.1", // 监听地址
-                    } ,
-        }, 
+            {
+      "port": $port_ss,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "tag": "ss-2022"
+    }
+  
 EOF
 else
 ssp=ssptargo
