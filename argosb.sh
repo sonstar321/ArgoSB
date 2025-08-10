@@ -296,12 +296,12 @@ cat >> "$HOME/agsb/xr.json" <<EOF
             "tag":"ss-2022",
             "listen": "::",
             "port": $port_ss,
-            "protocol": "socks"
+            "protocol": "socks",
             "settings": {
             "auth": "noauth", // 认证方式：noauth 或 password
             "udp": true,      // 是否启用 UDP 代理
             "ip": "127.0.0.1" // 监听地址
-                    } 
+                    } ,
         }, 
 EOF
 else
