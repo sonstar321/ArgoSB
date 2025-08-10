@@ -300,8 +300,7 @@ cat >> "$HOME/agsb/xr.json" <<EOF
         "udp": true
       },
       "tag": "ss-2022"
-    }
-  
+    }  
 EOF
 else
 ssp=ssptargo
