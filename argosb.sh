@@ -301,11 +301,6 @@ cat >> "$HOME/agsb/xr.json" <<EOF
             "auth": "noauth", // 认证方式：noauth 或 password
             "udp": true,      // 是否启用 UDP 代理
             "ip": "127.0.0.1" // 监听地址
-          "sniffing": {
-          "enabled": true,
-          "destOverride": ["http", "tls", "quic"],
-          "metadataOnly": false
-      }
     },  
 EOF
 else
