@@ -296,12 +296,7 @@ cat >> "$HOME/agsb/xr.json" <<EOF
             "tag":"ss-2022",
             "listen": "::",
             "port": $port_ss,
-            "protocol": "shadowsocks",
-                "settings": {
-                "method": "2022-blake3-aes-128-gcm",
-                "password": "$sskey",
-                "network": "tcp,udp"
-        },
+            "protocol": "socks"
           "sniffing": {
           "enabled": true,
           "destOverride": ["http", "tls", "quic"],
